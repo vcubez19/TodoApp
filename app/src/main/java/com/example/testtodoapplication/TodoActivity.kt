@@ -10,6 +10,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 
+/* Some source code in this file can be found at:
+
+https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa
+
+ */
+
+
 class TodoActivity : AppCompatActivity() {
 
 
