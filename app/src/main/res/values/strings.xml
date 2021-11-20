@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="add_todo_text">Add todo</string>
+    <string name="log_in">Log in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+</resources>
+
