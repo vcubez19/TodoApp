@@ -6,5 +6,14 @@
     <string name="log_in">Log in</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="password_hint_length">Password (min. 4 char)</string>
+    <string name="filter_text">Filter</string>
+    <string name="filter_default">Newest</string>
+    <string-array name="filter_options">
+        <item>Newest</item>
+        <item>Oldest</item>
+    </string-array>
+    <string name="sign_up_text">Sign up</string>
+    <string name="search_todos">Search todos</string>
 </resources>
 

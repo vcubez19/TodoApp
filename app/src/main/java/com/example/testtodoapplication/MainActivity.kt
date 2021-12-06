@@ -17,15 +17,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        // Dummy credentials
-        // Email: test@yahoo.com
-        // Password: yyyyyy
-
-
         // UI Elements
-        val email = findViewById<EditText>(R.id.idLoginEmail)
-        val password = findViewById<EditText>(R.id.idLoginPassword)
-        val loginButton = findViewById<Button>(R.id.idLoginButton)
+        val email = findViewById<EditText>(R.id.idSignUpEmail)
+        val password = findViewById<EditText>(R.id.idSignUpPassword)
+        val loginButton = findViewById<Button>(R.id.idSignUpButton)
+
+
+        // Your credentials
+        val userEmail = intent.getStringExtra("Email")
+        val userPassword = intent.getStringExtra("Password")
 
 
         loginButton.setOnClickListener {
@@ -34,12 +34,12 @@ class MainActivity : AppCompatActivity() {
             val passwordText = password.text.toString()
 
 
-            if (emailText == "test@yahoo.com" && passwordText == "yyyyyy") {
-                Toast.makeText(this, "Welcome!", Toast.LENGTH_LONG).show()
+            if (emailText == userEmail && passwordText == userPassword) {
+                Toast.makeText(applicationContext, "Welcome!", Toast.LENGTH_LONG).show()
                 val intent = Intent(this, TodoActivity::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this, "Invalid login. Please try again.", Toast.LENGTH_LONG).show()
+                Toast.makeText(applicationContext, "Invalid login. Please try again.", Toast.LENGTH_LONG).show()
             }
 
 

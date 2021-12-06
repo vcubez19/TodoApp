@@ -25,8 +25,8 @@
         android:id="@+id/delete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#FF9800"
         android:text="@string/delete"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,11 +36,22 @@
         android:id="@+id/add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#4CAF50"
         android:text="@string/add"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idSpinnerFilter"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/filter_options"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add"
         app:layout_constraintTop_toTopOf="parent" />
 
 
