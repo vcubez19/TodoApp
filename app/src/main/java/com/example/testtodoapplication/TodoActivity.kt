@@ -53,6 +53,7 @@ class TodoActivity : AppCompatActivity() {
             , itemlist)
 
 
+        // Handle Spinner selection
         spinnerFilter.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parentView: AdapterView<*>?,
